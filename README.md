@@ -12,10 +12,6 @@ The pipeline includes:
 - **Verilog HDL Implementation**: Generated using HDL Coder and synthesized for a Nexys A7 FPGA.
 - **OpenCL Baseline Comparison**: Benchmarks FPGA performance against a CPU/GPU implementation.
 
-## 📁 Project Structure
-
-
-
 ## 🛠 Software Setup
 
 - Vivado Design Suite (for Spartan 7)
