@@ -14,11 +14,7 @@ The pipeline includes:
 
 ## 📁 Project Structure
 
-- `/matlab-models`: Reference models for median filtering and Sobel detection
-- `/verilog`: Synthesizable Verilog modules for FPGA
-- `/opencl`: Parallel CPU/GPU pipeline for benchmarking
-- `/images`: Sample input and output image data
-- `/docs`: Reports, milestone updates, and technical specifications
+
 
 ## 🛠 Software Setup
 
