@@ -1,2 +1,34 @@
 # Image-Edge-Detection-Processing-using-FPGAs
-A real-time FPGA-based digital accelerator for image denoising and edge detection using median filtering and Sobel operators.
+
+This project implements a simulation-based digital accelerator for image processing on FPGA hardware. The system removes impulse noise and enhances edge features using hardware-optimised filtering and edge detection techniques.
+
+## 🔍 Overview
+
+The pipeline includes:
+- **3×3 RGB Median Filtering**: Reduces salt-and-pepper noise while preserving color fidelity.
+- **Grayscale Conversion**: Simplifies edge detection with lower memory and computational cost.
+- **4-Direction Sobel Edge Detection**: Identifies edges using FPGA-friendly integer arithmetic and directional masks.
+- **MATLAB Golden Models**: Serve as software references to validate accuracy.
+- **Verilog HDL Implementation**: Generated using HDL Coder and synthesized for a Nexys A7 FPGA.
+- **OpenCL Baseline Comparison**: Benchmarks FPGA performance against a CPU/GPU implementation.
+
+## 📁 Project Structure
+
+- `/matlab-models`: Reference models for median filtering and Sobel detection
+- `/verilog`: Synthesizable Verilog modules for FPGA
+- `/opencl`: Parallel CPU/GPU pipeline for benchmarking
+- `/images`: Sample input and output image data
+- `/docs`: Reports, milestone updates, and technical specifications
+
+## 🛠 Software Setup
+
+- Vivado Design Suite (for Spartan 7)
+- OpenCL development environment (for benchmarking) in MATLAB
+
+## 👥 Authors
+
+Kavya Kaushik, Dimpho Sefora, Griffin Trace, Zuhayr Halday
+
+## 📝 License
+
+MIT License (or your chosen license)
