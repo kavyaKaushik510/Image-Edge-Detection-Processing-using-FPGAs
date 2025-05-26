@@ -15,15 +15,15 @@ The pipeline includes:
 ## 📁 Project Structure
 The project is made up of 8 custom Verilog Modules:
 Made up of 7 Modules designed to be run directly on an FPGA found in \Filters Combined\Filters Combined.srcs\sources_1\new
-  -Controller.v
-  -conv.v
-  -ConvFilterTop.v
-  -FullMed.v
-  -LineBuffer.v
-  -MedianFilterTop.v
-  -MinMedMax.v
+  - **Controller.v
+  - **conv.v
+  - **ConvFilterTop.v
+  - **FullMed.v
+  - **LineBuffer.v
+  - **MedianFilterTop.v
+  - **MinMedMax.v
 And one test bench file found in \Filters Combined\Filters Combined.srcs\sim_2\new
-  -tb.v
+  - **tb.v
 
   To run the project open "Filters Combined.xpr" in Vivador, click run simulation, followed by typing run all in the console.
   The program takes in an input image called "Input.bmp" and outputs an output image called "Output.bmp". These can be found in \Filters Combined\Filters Combined.sim\sim_2\behav\xsim
