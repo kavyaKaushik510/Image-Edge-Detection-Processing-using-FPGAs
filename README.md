@@ -50,6 +50,9 @@ Located in:
 
 - `tb.v` – Simulation testbench
 
+### 🖼 Input & Output Images  
+  Used for Testing and Validating the filter
+
 ### ▶️ How to Run
 
 1. Open `Filters Combined.xpr` in **Vivado**
