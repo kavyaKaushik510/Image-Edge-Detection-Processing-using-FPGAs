@@ -1,43 +1,89 @@
-# Image-Edge-Detection-Processing-using-FPGAs
+# 🖼️ Image Edge Detection Processing using FPGAs
 
-This project implements a simulation-based digital accelerator for image processing on FPGA hardware. The system removes impulse noise and enhances edge features using hardware-optimised filtering and edge detection techniques.
+This project implements a simulation-based digital accelerator for real-time image processing on FPGA hardware. It removes impulse noise and enhances edge features using hardware-optimized filtering and edge detection techniques.
+
+---
 
 ## 🔍 Overview
 
-The pipeline includes:
-- **3×3 RGB Median Filtering**: Reduces salt-and-pepper noise while preserving color fidelity.
-- **Grayscale Conversion**: Simplifies edge detection with lower memory and computational cost.
-- **2-Direction Sobel Edge Detection**: Identifies edges using FPGA-friendly integer arithmetic and directional masks.
-- **MATLAB Golden Models**: Serve as software references to validate accuracy.
-- **Verilog HDL Implementation**: Generated using HDL Coder and synthesized for a Nexys A7 FPGA.
-- **OpenCL Baseline Comparison**: Benchmarks FPGA performance against a CPU/GPU implementation.
+The image processing pipeline consists of the following stages:
+
+- **3×3 RGB Median Filtering**  
+  Removes salt-and-pepper (impulse) noise while preserving edge and color details.
+
+- **Grayscale Conversion**  
+  Reduces computational complexity for subsequent edge detection.
+
+- **2-Directional Sobel Edge Detection**  
+  Extracts vertical and horizontal edges using FPGA-friendly integer-based convolution.
+
+- **MATLAB Golden Models**  
+  Software reference models to validate the accuracy of hardware output.
+
+- **Verilog HDL Implementation**  
+  HDL Coder-generated modules synthesized for the **Nexys A7 (Spartan-7)** FPGA board.
+
+- **OpenCL Baseline Comparison**  
+  Benchmarks performance against equivalent CPU/GPU implementations in MATLAB.
+
+---
 
 ## 📁 Project Structure
-The project is made up of 8 custom Verilog Modules:
-Made up of 7 Modules designed to be run directly on an FPGA found in \Filters Combined\Filters Combined.srcs\sources_1\new
-  - **Controller.v
-  - **conv.v
-  - **ConvFilterTop.v
-  - **FullMed.v
-  - **LineBuffer.v
-  - **MedianFilterTop.v
-  - **MinMedMax.v
-And one test bench file found in \Filters Combined\Filters Combined.srcs\sim_2\new
-  - **tb.v
 
-  To run the project open "Filters Combined.xpr" in Vivador, click run simulation, followed by typing run all in the console.
-  The program takes in an input image called "Input.bmp" and outputs an output image called "Output.bmp". These can be found in \Filters Combined\Filters Combined.sim\sim_2\behav\xsim
+The project contains **8 Verilog files** organized into modules and simulation components.
 
+### 🔧 FPGA Modules  
+Located in:  
+\Filters Combined\Filters Combined.srcs\sources_1\new
 
-## 🛠 Software Setup
+- `Controller.v` – Control logic for sequencing operations  
+- `conv.v` – Convolution operation module  
+- `ConvFilterTop.v` – Top module for Sobel convolution  
+- `FullMed.v` – Median filter controller  
+- `LineBuffer.v` – Line buffering for streaming image rows  
+- `MedianFilterTop.v` – Top module for median filtering  
+- `MinMedMax.v` – Min-Median-Max sorting logic
 
-- Vivado Design Suite (for Spartan 7)
-- OpenCL development environment (for benchmarking) in MATLAB
+### 🧪 Testbench  
+Located in:  
+\Filters Combined\Filters Combined.srcs\sim_2\new
+
+- `tb.v` – Simulation testbench
+
+### ▶️ How to Run
+
+1. Open `Filters Combined.xpr` in **Vivado**
+2. Run the simulation:
+   - Click **"Run Simulation"**
+   - In the Tcl Console, type:  
+     ```
+     run all
+     ```
+3. Input: `Input.bmp`  
+4. Output: `Output.bmp`  
+   Located in:  
+\Filters Combined\Filters Combined.sim\sim_2\behav\xsim
+
+---
+
+## 🛠 Software Requirements
+
+- **Vivado Design Suite** (target: Spartan-7 / Nexys A7 board)  
+- **MATLAB with HDL Coder**  
+- **OpenCL Development Tools** (for CPU/GPU benchmarking)
+
+---
 
 ## 👥 Authors
 
-Kavya Kaushik, Dimpho Sefora, Griffin Trace, Zuhayr Halday
+- Kavya Kaushik  
+- Dimpho Sefora  
+- Griffin Trace  
+- Zuhayr Halday
+
+---
 
 ## 📝 License
 
-MIT License (or your chosen license)
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
