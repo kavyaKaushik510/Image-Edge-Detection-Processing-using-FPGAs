@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,
+LineBuffer.v,verilog,xil_defaultlib,../../../Median Filter.srcs/sources_1/new/LineBuffer.v,
+Controller.v,verilog,xil_defaultlib,../../../Median Filter.srcs/sources_1/new/Controller.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,4 @@
+Median Time: 0.5145 s
+Sobel Time: 1.8586 ms
+Total Time: 0.5164 s
+Edge Density: 32.7927 percent

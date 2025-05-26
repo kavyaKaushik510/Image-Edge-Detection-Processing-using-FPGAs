@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/griff/Filters Combined/Filters Combined.gen/sources_1/ip/fifo_buffer/sim/fifo_buffer.v,1747603603,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/Controller.v,,fifo_buffer,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.sim/sim_2/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sim_2/new/tb.v,1748290913,verilog,,,,tb,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/Controller.v,1748292438,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/ConvFilterTop.v,,Controller,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/ConvFilterTop.v,1748291444,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/FullMed.v,,ConvFilterTop,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/FullMed.v,1748291808,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/LineBuffer.v,,FullMed,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/LineBuffer.v,1748292686,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/MedianFilterTop.v,,LineBuffer,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/MedianFilterTop.v,1748291297,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/MinMedMax.v,,MedianFilterTop,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/MinMedMax.v,1748291903,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/conv.v,,MinMedMax,,,,,,,,
+C:/Users/griff/Filters Combined/Filters Combined.srcs/sources_1/new/conv.v,1747662638,verilog,,C:/Users/griff/Filters Combined/Filters Combined.srcs/sim_2/new/tb.v,,conv,,,,,,,,

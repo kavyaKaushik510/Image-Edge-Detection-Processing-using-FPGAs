@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Filters Combined.gen/sources_1/ip/fifo_buffer/sim/fifo_buffer.v" \
+"../../../../Filters Combined.srcs/sources_1/new/Controller.v" \
+"../../../../Filters Combined.srcs/sources_1/new/ConvFilterTop.v" \
+"../../../../Filters Combined.srcs/sources_1/new/FullMed.v" \
+"../../../../Filters Combined.srcs/sources_1/new/LineBuffer.v" \
+"../../../../Filters Combined.srcs/sources_1/new/MedianFilterTop.v" \
+"../../../../Filters Combined.srcs/sources_1/new/MinMedMax.v" \
+"../../../../Filters Combined.srcs/sources_1/new/conv.v" \
+"../../../../Filters Combined.srcs/sim_2/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
